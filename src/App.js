@@ -10,6 +10,7 @@ const App = () => {
   const fetch = async () => {
     const { config, data, headers, request, status } = await axios.get("https://api.publicapis.org/categories")
     setData(data)
+    
     setDefaultData(data)
   }
  
