@@ -5,9 +5,7 @@ const App = () => {
   const [data, setData] = useState([])
   const [defaultData, setDefaultData] = useState([])
   
-  useEffect(() => {
-    fetch()
-  },[])
+  useEffect(() => fetch(),[])
 
   const fetch = async () => {
     const { config, data, headers, request, status } = await axios.get("https://api.publicapis.org/categories")
